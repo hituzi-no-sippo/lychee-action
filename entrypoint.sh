@@ -20,7 +20,7 @@ FORMAT=""
 [[ "$ARGS" =~ "--format " ]] || FORMAT="--format ${INPUT_FORMAT}"
 
 # Execute lychee
-eval lychee ${FORMAT} --output ${LYCHEE_TMP} ${ARGS} 
+eval lychee ${FORMAT} --output ${LYCHEE_TMP} ${ARGS}
 exit_code=$?
 
 if [ ! -f "${LYCHEE_TMP}" ]; then
